@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria China de Emojis - Desafío</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Juego de Memoria 🏮 Desafío del Tiempo</h1>
+        <div class="stats-container">
+            <h3>Aciertos: <span id="result">0</span></h3>
+            <h3>Tiempo: <span id="timer">60</span></h3>
+        </div>
+    </header>
+
+    <main>
+        <div id="game-board"></div>
+    </main>
+
+    <!-- Modal para mensajes de victoria/derrota -->
+    <div id="modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modal-title"></h2>
+            <p id="modal-message"></p>
+            <button id="restart-button">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
